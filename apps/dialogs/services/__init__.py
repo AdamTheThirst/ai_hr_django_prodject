@@ -5,6 +5,7 @@ from .finish_policy import DialogFinishDecision, DialogFinishDecisionService
 from .llm_context import build_game_call_messages, render_analysis_transcript
 from .message_dto import DialogMessageDTO, DialogMessageDTOBuilder
 from .runtime_state import DialogRuntimeState, DialogRuntimeStateBuilder
+from .send_message_payload import DialogSendMessagePayload, DialogSendMessagePayloadBuilder
 
 __all__ = [
     "DialogAbandonDecision",
@@ -15,6 +16,8 @@ __all__ = [
     "DialogMessageDTOBuilder",
     "DialogRuntimeState",
     "DialogRuntimeStateBuilder",
+    "DialogSendMessagePayload",
+    "DialogSendMessagePayloadBuilder",
     "build_game_call_messages",
     "render_analysis_transcript",
 ]
