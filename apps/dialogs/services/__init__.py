@@ -2,6 +2,7 @@
 
 from .abandon_policy import DialogAbandonDecision, DialogAbandonDecisionService
 from .finish_policy import DialogFinishDecision, DialogFinishDecisionService
+from .finish_response import DialogFinishAnalysisDTO, DialogFinishPayload, DialogFinishResponse, DialogFinishResponseBuilder
 from .llm_context import build_game_call_messages, render_analysis_transcript
 from .message_dto import DialogMessageDTO, DialogMessageDTOBuilder
 from .runtime_state import DialogRuntimeState, DialogRuntimeStateBuilder
@@ -12,6 +13,10 @@ __all__ = [
     "DialogAbandonDecisionService",
     "DialogFinishDecision",
     "DialogFinishDecisionService",
+    "DialogFinishAnalysisDTO",
+    "DialogFinishPayload",
+    "DialogFinishResponse",
+    "DialogFinishResponseBuilder",
     "DialogMessageDTO",
     "DialogMessageDTOBuilder",
     "DialogRuntimeState",
