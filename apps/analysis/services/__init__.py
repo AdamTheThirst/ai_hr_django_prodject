@@ -1,5 +1,6 @@
 """Сервисы приложения ``analysis``."""
 
+from .prompt_snapshot import AnalysisPromptSnapshot, AnalysisPromptSnapshotBuilder
 from .response_parser import (
     AnalysisResponseParser,
     AnalysisResponseParserResult,
@@ -7,6 +8,8 @@ from .response_parser import (
 )
 
 __all__ = [
+    "AnalysisPromptSnapshot",
+    "AnalysisPromptSnapshotBuilder",
     "AnalysisResponseParser",
     "AnalysisResponseParserResult",
     "ParsedAnalysisResponse",
