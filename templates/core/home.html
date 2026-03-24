@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Каркас проекта{% endblock %}
+
+{% block content %}
+<section class="card shadow-sm border-0 page-shell">
+    <div class="card-body p-4 p-md-5">
+        <span class="badge text-bg-primary mb-3">Итерация 1</span>
+        <h1 class="h3 mb-3">Базовый каркас Django-проекта готов</h1>
+        <p class="text-secondary mb-4">
+            На этом этапе подключены настройки окружений, SQLite, шаблоны, статика,
+            медиа-каталог, базовая маршрутизация и отдельные приложения согласно архитектуре.
+        </p>
+        <div class="row g-3">
+            <div class="col-12 col-md-6">
+                <div class="info-tile h-100">
+                    <h2 class="h6">Что уже есть</h2>
+                    <ul class="mb-0 ps-3 small text-secondary">
+                        <li>project/settings для local и production;</li>
+                        <li>каркас приложений и сервисных пакетов;</li>
+                        <li>базовые шаблоны и локальный CSS;</li>
+                        <li>маршруты для стартовых разделов и backoffice.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="info-tile h-100">
+                    <h2 class="h6">Что будет позже</h2>
+                    <ul class="mb-0 ps-3 small text-secondary">
+                        <li>модели и миграции;</li>
+                        <li>аутентификация и роли;</li>
+                        <li>игры, сценарии и чат;</li>
+                        <li>анализ, PDF и backoffice-логика.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

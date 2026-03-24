@@ -1,0 +1,24 @@
+:root {
+    --app-surface: #ffffff;
+    --app-border: #d9dee8;
+    --app-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+body {
+    color: #111827;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page-shell {
+    border-radius: 1rem;
+    box-shadow: var(--app-shadow);
+    background: var(--app-surface);
+}
+
+.info-tile {
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid var(--app-border);
+    border-radius: 0.875rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
